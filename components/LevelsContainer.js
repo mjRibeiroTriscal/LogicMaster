@@ -1,15 +1,19 @@
 import React, { Component } from 'react'
 import { StyleSheet, Text, View, Dimensions, TouchableOpacity } from 'react-native'
 import Header from './Header'
+import LevelsList from './LevelsList'
 
 export default class Levels extends Component {
+
+    state = {
+        questions: ['Questão 1', 'Questão 2', 'Questão 3', 'Questão 4']
+    }
+
     render() {
         return (
             <View style={styles.container}>
                 <Header nav={this.props.nav} headerTitle="LEVELS" />
-                <View style={styles.listContainer}>
-                    <Text style={styles.text}>Mário</Text>
-                </View>
+                <LevelsList levelListSize={this.state.questions} nav={this.props.nav} />
             </View>
         )
     }

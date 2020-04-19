@@ -11,14 +11,8 @@ export default class MenuList extends Component {
 
     toggleSound = () => {
         this.state.isSoundOn ?
-            this.setState({
-                isSoundOn: false,
-                soundIcon: 'volume-x'
-            }) :
-            this.setState({
-                isSoundOn: true,
-                soundIcon: 'volume-2'
-            })
+            this.setState({ isSoundOn: false, soundIcon: 'volume-x' }) :
+            this.setState({ isSoundOn: true, soundIcon: 'volume-2' })
     }
 
     render() {
