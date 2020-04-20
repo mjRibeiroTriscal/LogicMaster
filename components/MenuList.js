@@ -7,6 +7,7 @@ export default class MenuList extends Component {
     state = {
         isSoundOn: true,
         soundIcon: "volume-2",
+        currentLevel: 1,
     }
 
     toggleSound = () => {

@@ -7,11 +7,16 @@ export default class LevelsList extends Component {
         bgLevelColor: "#00000077",
     }
 
+    pressLevelBtn = (x, y) => {
+        x.navigate("GameScreen")
+        y(this.props.index)
+    }
+
     render() {
         return (
             <TouchableOpacity
                 style={[styles.levelCont, { backgroundColor: this.state.bgLevelColor }]}
-                onPress={() => console.log('Level ' + this.props.index)}>
+                onPress={() => this.pressLevelBtn(this.props.nav, this.props.setDada)}>
                 <Text style={styles.text}>{this.props.index}</Text>
             </TouchableOpacity>
         )

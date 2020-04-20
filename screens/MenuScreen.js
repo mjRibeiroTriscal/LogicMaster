@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { StyleSheet, Text, View } from 'react-native'
+import { StyleSheet, Text, View, Linking } from 'react-native'
 
 import MenuList from '../components/MenuList'
 
@@ -13,7 +13,11 @@ export default function MenuScreen({ navigation }) {
                 <MenuList nav={navigation} />
             </View>
             <View style={[{flex: 1}, styles.align]}>
-                <Text style={ styles.brand }>Developed By TargetCode</Text>
+                <Text
+                    style={ styles.brand }
+                    onPress={() => Linking.openURL('https://play.google.com/store/apps/developer?id=TargetCode')}>
+                    Developed By TargetCode
+                </Text>
             </View>
         </View>
     )

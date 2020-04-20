@@ -7,7 +7,7 @@ export default class Header extends Component {
     render() {
         return (
             <View style={styles.container}>
-                <BackHeader title="BACK" nav={this.props.nav} place="MenuScreen" />
+                <BackHeader title={this.props.backTitle} nav={this.props.nav} place="MenuScreen" />
                 <Text style={styles.text}>{this.props.headerTitle}</Text>
             </View>
         )

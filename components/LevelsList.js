@@ -21,7 +21,7 @@ export default class LevelsList extends Component {
     getLevelList = () => {
         console.log(this.props.levelListSize)
         return this.props.levelListSize.map((cont, index) => (
-            <LevelBtn nav={this.props.nav} index={index + 1} />
+            <LevelBtn nav={this.props.nav} setDada={this.props.setDada} index={index + 1} />
         ))
     }
 
