@@ -8,7 +8,7 @@ export default class BackHeader extends Component {
             <View style={styles.container}>
                 <TouchableOpacity style={styles.button} onPress={() => this.props.nav.navigate(this.props.place)}>
                     <View style={styles.backBtn}>
-                        <Ionicons name="ios-arrow-back" size={28} color="#555555" />
+                        <Ionicons name="ios-arrow-back" size={28} color="#777777" />
                         {
                             this.props.title ?
                                 <Text style={[styles.text, styles.title]}>{this.props.title}</Text> : null
@@ -36,7 +36,7 @@ const styles = StyleSheet.create({
     },
     text: {
         fontSize: 18,
-        color: '#555555',
+        color: '#777777',
     },
     title: {
         marginLeft: 10,

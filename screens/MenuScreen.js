@@ -35,6 +35,6 @@ const styles = StyleSheet.create({
     },
     brand: {
         fontSize: 14,
-        color: '#77777788',
+        color: '#77777799',
     },
 })

@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { StyleSheet, Text, View, TouchableOpacity, Dimensions, TouchableWithoutFeedback } from 'react-native'
+import { StyleSheet, Text, View, Dimensions, TouchableWithoutFeedback } from 'react-native'
 import { Feather, SimpleLineIcons, AntDesign } from '@expo/vector-icons'
 
 export default class MenuList extends Component {
@@ -84,10 +84,10 @@ const styles = StyleSheet.create({
     },
     text: {
         fontSize: 28,
-        color: '#555555',
+        color: '#777777',
     },
     icon: {
         alignSelf: 'center',
-        color: "#444444",
+        color: "#555555",
     },
 })
